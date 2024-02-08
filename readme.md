@@ -18,19 +18,20 @@ To run this project locally, follow these steps:
 1. Clone this repository.
 2. Install dependencies by running `npm install`.
 3. Set up your database configuration in the `.env` file.
-4. Run the following commands to set up Prisma
-```
- docker exec -it backend npx prisma migrate dev --name init
-```
-5. Run ```docker compose up -d``` to start all the images
+4. Run ```docker compose up -d``` to start all the images
+5. Or run ``` docker compose start``` to start
 
 ### Development Commands
 
-1. Build the Container 
+1. Run the following commands to set up Prisma
+```
+ docker exec -it backend npx prisma migrate dev --name init
+```
+2. Build the Container 
 ```
  compose build -t <backend | db | frontend | image-name>
 ```
-2. Run one container 
+3. Run one container 
 ```
 docker run <backend | db | frontend | image-name>
 ```
@@ -44,3 +45,5 @@ model Person {
   email String  
 }
 ```
+## Screenshot
+![App Screenshot](app-overview.PNG)

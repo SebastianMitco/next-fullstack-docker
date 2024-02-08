@@ -8,11 +8,9 @@ RUN npm install
 COPY prisma ./prisma
 
 RUN npx prisma generate
+RUN npx prisma migrate dev --name init --preview-feature
 
 COPY ./ ./
-
-# Run Prisma migration command during container build
-RUN npx prisma migrate --name
 
 EXPOSE 5000
 
