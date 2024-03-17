@@ -1,4 +1,4 @@
-# Nuxt.js App with Docker and Prisma
+# Next.js App with Docker and Prisma
 
 This project aims to create a Nuxt.js application with Docker and Prisma installed. The application allows users to save people's names and emails.
 
